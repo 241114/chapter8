@@ -7,6 +7,15 @@ public class Hero {
         System.out.println("敵に５ポイントのダメージをあたえた！");
     }
 
+    public Hero(String name){
+        this.hp =100;
+    }
+
+    public Hero(){
+        this.hp = 100;
+        this.name = "ダミー";
+    }
+
     public void sleep(){
         this.hp = 100;
         System.out.println(this.name + "は、眠って回復した！");
